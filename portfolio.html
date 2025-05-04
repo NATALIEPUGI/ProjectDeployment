@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalie Pugi - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <div class="background">
+        <canvas id="background-canvas" role="presentation" aria-hidden="true"></canvas>
+    </div>
+
+    <div class="nav-container">
+        <nav role="navigation">
+            <a href="#" class="logo" aria-label="Natalie Pugi Home">NATALIEPUGI</a>
+            <div class="nav-links">
+                <a href="#about" aria-label="About Section">About</a>
+                <a href="#projects" aria-label="Projects Section">Projects</a>
+                <a href="#contact" aria-label="Contact Section">Contact</a>
+                <a href="#skills" aria-label="Skills content">Skills</a>
+                <a href="#hero" class="btn btn-outline" aria-label="Go to Hero Section">Resume</a>
+                <button class="theme-toggle" aria-label="Toggle Theme"></button>
+            </div>
+            <button class="menu-btn" aria-label="Open Menu" aria-expanded="false">☰</button>
+        </nav>
+    </div>
+
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close Menu">✕</button>
+        <div class="mobile-links">
+            <a href="#about" aria-label="About Section">About</a>
+            <a href="#projects" aria-label="Projects Section">Projects</a>
+            <a href="#contact" aria-label="Contact Section">Contact</a>
+            <a href="#hero" aria-label="Go to Hero Section">Resume</a>
+            <button class="theme-toggle" aria-label="Toggle Theme"></button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <header id="hero">
+            <div class="hero">
+                <div class="name-container">
+                    <h1 class="name" id="animated-name">Hi I'm NATALIE</h1>
+                    <h2 class="title">Web Designer & Developer</h2>
+                    <p class="intro-text">
+                        <span class="typewriter"></span>
+                    </p>
+                    <img src="nat.jpg" alt="Natalie Pugi Profile Picture" class="profile-pic">
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary" aria-label="View Projects">View Projects</a>
+                    <a href="#contact" class="btn btn-outline" aria-label="Get In Touch">Get In Touch</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="mouse"></div>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate web designer and developer dedicated to building visually stunning and highly functional websites. My expertise lies at the intersection of design and technology, allowing me to create seamless user experiences.
+                    </p>
+                    <p>
+                        With a focus on clean code, responsive design, and modern frameworks, I deliver solutions that are both beautiful and performant. I'm always exploring new tools and trends to push the boundaries of web development.
+                    </p>
+                    <p>
+                        Beyond coding, I draw inspiration from digital art, tech innovation, and open-source communities, where I actively contribute to collaborative projects.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <video autoplay loop muted playsinline aria-hidden="true">
+                        <source src="0b431981-7f68-4bf6-a38b-d1a6e68e9311.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skill-item">
+                    <div class="skill-label">HTML5 <span>95%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">CSS3 <span>90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">JavaScript <span>85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">React <span>80%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">Node.js <span>75%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">UI/UX Design <span>85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">Responsive Design <span>90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">Web Animation <span>80%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" aria-label="Show All Projects">All</button>
+                <button class="filter-btn" data-filter="React" aria-label="Show React Projects">React</button>
+                <button class="filter-btn" data-filter="JavaScript" aria-label="Show JavaScript Projects">JavaScript</button>
+                <button class="filter-btn" data-filter="CSS3" aria-label="Show CSS3 Projects">CSS3</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-tech="React,Node.js,MongoDB,CSS3" tabindex="0">
+                    <div class="project-image">
+                        <img src="12.webp" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">
+                            A modern e-commerce solution with real-time inventory, seamless checkout, and responsive design for an optimal user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="E-Commerce Platform Live Demo">Live Demo</a>
+                            <a href="#" aria-label="E-Commerce Platform Source Code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tech="HTML5,SASS,JavaScript,Chart.js" tabindex="0">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-28 101521.png" alt="Dashboard UI Kit">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard UI Kit</h3>
+                        <p class="project-desc">
+                            A comprehensive dashboard UI kit with customizable components, data visualizations, and responsive layouts for admin interfaces.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">SASS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="Dashboard UI Kit Live Demo">Live Demo</a>
+                            <a href="#" aria-label="Dashboard UI Kit Source Code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tech="JavaScript,GSAP,Three.js,CSS3" tabindex="0">
+                    <div class="project-image">
+                        <img src="13.webp" alt="Interactive Web App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Web App</h3>
+                        <p class="project-desc">
+                            An engaging web app with rich animations, interactive elements, and seamless cross-device performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GSAP</span>
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="Interactive Web App Live Demo">Live Demo</a>
+                            <a href="#" aria-label="Interactive Web App Source Code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm excited to collaborate on innovative projects or discuss new opportunities. Reach out via the form or through the contact details below.
+                    </p>
+                    <div class="contact-links">
+                        <a href="/cdn-cgi/l/email-protection#3c525d485d5055597c59445d514c5059125f5351" class="contact-link" aria-label="Email Natalie">
+                            <i>📧</i> <span class="__cf_email__" data-cfemail="9ef8ecfff0fdf7edafaeaea7edf1f2f7eddef9f3fff7f2b0fdf1f3">[email&#160;protected]</span>
+                        </a>
+                        <a href="tel:+639514194035" class="contact-link" aria-label="Call Natalie">
+                            <i>📱</i> +63 951 419 4035
+                        </a>
+                        <a href="#" class="contact-link" aria-label="Natalie's Location">
+                            <i>📍</i> Labogon, Mandaue City, Cebu
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" aria-label="Contact Form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required aria-required="true" placeholder="Your Name">
+                            <span class="error-message">Please enter your name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required aria-required="true" placeholder="Your Email">
+                            <span class="error-message">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required aria-required="true" placeholder="Subject">
+                            <span class="error-message">Please enter a subject.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required aria-required="true" placeholder="Your Message"></textarea>
+                            <span class="error-message">Please enter a message.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" aria-label="Send Message">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="GitHub Profile">gh</a>
+                <a href="https://www.tiktok.com/@natalieskwa" class="social-icon" aria-label="TikTok Profile">t</a>
+                <a href="https://www.facebook.com/francis.solis.94214508" class="social-icon" aria-label="Facebook Profile">fb</a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.instagram.com%2Fonly.natliweq%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaeDvgaa0WWzoI1P5l8PEIeemj8BU8kuk6EqI7Z9xwQo-JjNSEzETQoB7Qp5yg_aem__c-4lh2Hz-m2kNZN6ERNdQ&e=AT3TVn6KSrFg7rKuK4J7EPXXbM4tov2od385iZSESv-XIQlXmoTL5NE-8zAkzJC-DgUuiX7JvGvAgwxiWSjFVJcV_meVChByn157h5Q" class="social-icon" aria-label="Instagram Profile">ig</a>
+            </div>
+            <p class="copyright">© 2025 NATALIE PUGI. All rights reserved.</p>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="portfolio.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9393de10e88d820f',t:'MTc0NjE1MDYyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
